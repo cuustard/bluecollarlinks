@@ -11,28 +11,59 @@
 		<title>Blue Collar Links</title>
 		<style>
 			body {
-				width: 50%;
-				margin: auto;
+				margin: 0;
 				padding: 20px;
 				text-align: center;
+				background: linear-gradient(
+						to top,
+						rgba(0, 0, 0, 0.8),
+						rgba(0, 0, 0, 0.1)
+					),
+					url("icons/socialMediaTrailer.00_00_49_02.Still001.bmp");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				min-height: 100vh; /* Full viewport height */
+				width: 100%; /* Full width */
+				overflow-x: hidden; /* Prevent horizontal scroll */
+				overflow-y: auto; /* Allow vertical scroll if necessary */
+				box-sizing: border-box; /* Include padding and border in element's total width and height */
 			}
 
+			.title {
+				color: white;
+				font-family: "futura-pt-condensed", sans-serif;
+				text-transform: uppercase;
+				font-weight: 800;
+				font-style: normal;
+				text-transform: uppercase;
+			}
 			.container {
-				padding: 10px;
-				margin: 10px;
+				padding: 20px;
+				margin: 20px;
+				background-color: rgba(
+					255,
+					255,
+					255,
+					0.2
+				); /* White with 10% opacity */
+			}
+			.titleContainer {
+				background-color: #006a94;
+				color: white;
+				padding: 20px;
 			}
 
-			h1,
 			h2 {
 				font-family: "futura-pt-condensed", sans-serif;
 				font-weight: 800;
 				font-style: normal;
-				font-size: 36px; /* Adjusted font size */
+				font-size: 36px;
 				letter-spacing: 0;
 				line-height: 1.2;
 				text-transform: uppercase;
 				color: #006a94;
-				margin-bottom: 15px; /* Added margin for spacing */
+				margin-bottom: 15px;
 			}
 
 			h1 {
@@ -47,56 +78,86 @@
 			}
 
 			li {
-				margin-bottom: 10px; /* Added margin for spacing */
+				margin-bottom: 10px;
 				margin: 10px;
 			}
 
 			a {
 				text-decoration: none;
 				color: #006a94;
-				transition: color 0.3s ease; /* Smooth transition for color change */
+				transition: color 0.3s ease;
 			}
 
 			a:hover {
-				color: #ff8c00; /* Change the color on hover */
+				color: #ff8c00;
 			}
 
 			img {
 				width: 50px;
+				transition: transform 0.3s ease;
 			}
 
 			img:hover {
-				width: 70px;
+				transform: scale(1.2);
+			}
+
+			/* Media query for devices with width less than or equal to 600px */
+			@media (max-width: 600px) {
+				body {
+					padding: 10px;
+				}
+
+				h1,
+				h2 {
+					font-size: 24px;
+				}
+
+				h1 {
+					font-size: 48px;
+				}
+
+				ul {
+					font-size: 16px;
+				}
+
+				img {
+					width: 30px;
+				}
+
+				img:hover {
+					transform: scale(1.2);
+				}
 			}
 		</style>
 	</head>
 	<body>
-		<h1>A Taste of Town</h1>
+		<div class="titleContainer">
+			<h1 class="title">A Taste of Town</h1>
+		</div>
 
 		<div class="container">
-			<h2>Find out about us!</h2>
+			<h2>Find out about us</h2>
 			<ul>
 				<li>
-					Our
 					<a
 						href="https://www.bluecollarstreetfood.co.uk/"
 						target="_blank"
-						>website</a
-					>.
+						>Website</a
+					>
 				</li>
 				<li>
 					<a
 						href="https://www.bluecollarstreetfood.co.uk/blue-collar-corner"
 						target="_blank"
 						>Blue Collar Corner</a
-					>.
+					>
 				</li>
 				<li>
 					<a
 						href="https://www.bluecollarstreetfood.co.uk/weekly-market"
 						target="_blank"
 						>Street Food Markets</a
-					>.
+					>
 				</li>
 			</ul>
 		</div>
@@ -125,7 +186,7 @@
 			<h2>Socials</h2>
 			<ul>
 				<li>
-					<a href="#">
+					<a href="https://www.tiktok.com/@bluecollarstreetfood">
 						<img
 							src="icons/4362958_tiktok_logo_social media_icon.png"
 						/>
